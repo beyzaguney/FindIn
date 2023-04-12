@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindInDX", "FindInDX\FindInDX.csproj", "{FF7AEBD5-9AA4-4227-8E1F-BAB9009BF6B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF7AEBD5-9AA4-4227-8E1F-BAB9009BF6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7AEBD5-9AA4-4227-8E1F-BAB9009BF6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7AEBD5-9AA4-4227-8E1F-BAB9009BF6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7AEBD5-9AA4-4227-8E1F-BAB9009BF6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D2BA694-1650-46F3-A4FE-E49A2E6F8EB4}
+	EndGlobalSection
+EndGlobal
