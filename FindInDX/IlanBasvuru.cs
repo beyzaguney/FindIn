@@ -11,12 +11,11 @@ using System.Windows.Forms;
 
 namespace FindInDX
 {
-    public partial class FormAnaSayfa : DevExpress.XtraEditors.XtraForm
+    public partial class IlanBasvuru : DevExpress.XtraEditors.XtraForm
     {
-        public FormAnaSayfa()
+        public IlanBasvuru()
         {
             InitializeComponent();
-            
         }
     }
 }

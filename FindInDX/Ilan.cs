@@ -17,5 +17,10 @@ namespace FindInDX
         {
             InitializeComponent();
         }
+
+        private void checkedComboBoxEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -87,11 +87,23 @@
     <Compile Include="FormGiris.Designer.cs">
       <DependentUpon>FormGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="GelenBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelenBasvuru.Designer.cs">
+      <DependentUpon>GelenBasvuru.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ilan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ilan.Designer.cs">
       <DependentUpon>Ilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IlanBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IlanBasvuru.Designer.cs">
+      <DependentUpon>IlanBasvuru.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,8 +125,14 @@
     <EmbeddedResource Include="FormGiris.resx">
       <DependentUpon>FormGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GelenBasvuru.resx">
+      <DependentUpon>GelenBasvuru.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ilan.resx">
       <DependentUpon>Ilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IlanBasvuru.resx">
+      <DependentUpon>IlanBasvuru.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
