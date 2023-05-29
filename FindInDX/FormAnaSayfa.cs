@@ -15,8 +15,11 @@ namespace FindInDX
     {
         public FormAnaSayfa()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
+        }
+
+        private void FormAnaSayfa_Load(object sender, EventArgs e)
+        {
         }
     }
 }

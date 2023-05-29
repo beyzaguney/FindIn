@@ -35,27 +35,30 @@ namespace FindInDX
             this.checkButton2 = new DevExpress.XtraEditors.CheckButton();
             this.btnIleri = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtEposta = new DevExpress.XtraEditors.TextEdit();
+            this.txtAd = new DevExpress.XtraEditors.TextEdit();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtEposta = new DevExpress.XtraEditors.TextEdit();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSifre = new DevExpress.XtraEditors.TextEdit();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkedComboBoxEdit1 = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.cbBolge = new System.Windows.Forms.ComboBox();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.txtBio = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBio.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -118,7 +121,7 @@ namespace FindInDX
             this.btnIleri.Appearance.Options.UseBackColor = true;
             this.btnIleri.Appearance.Options.UseFont = true;
             this.btnIleri.Appearance.Options.UseForeColor = true;
-            this.btnIleri.Location = new System.Drawing.Point(288, 426);
+            this.btnIleri.Location = new System.Drawing.Point(288, 491);
             this.btnIleri.Name = "btnIleri";
             this.btnIleri.Size = new System.Drawing.Size(94, 44);
             this.btnIleri.TabIndex = 5;
@@ -128,7 +131,7 @@ namespace FindInDX
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.txtEposta);
+            this.groupBox1.Controls.Add(this.txtAd);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox1.Location = new System.Drawing.Point(122, 150);
@@ -138,22 +141,22 @@ namespace FindInDX
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ad";
             // 
-            // txtEposta
+            // txtAd
             // 
-            this.txtEposta.Location = new System.Drawing.Point(6, 17);
-            this.txtEposta.Name = "txtEposta";
-            this.txtEposta.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.txtEposta.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtEposta.Properties.Appearance.Options.UseBackColor = true;
-            this.txtEposta.Properties.Appearance.Options.UseFont = true;
-            this.txtEposta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtEposta.Size = new System.Drawing.Size(186, 24);
-            this.txtEposta.TabIndex = 4;
+            this.txtAd.Location = new System.Drawing.Point(6, 17);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtAd.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtAd.Properties.Appearance.Options.UseBackColor = true;
+            this.txtAd.Properties.Appearance.Options.UseFont = true;
+            this.txtAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtAd.Size = new System.Drawing.Size(186, 24);
+            this.txtAd.TabIndex = 4;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.textEdit2);
+            this.groupBox3.Controls.Add(this.txtSoyad);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox3.Location = new System.Drawing.Point(341, 150);
@@ -163,22 +166,22 @@ namespace FindInDX
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Soyad";
             // 
-            // textEdit2
+            // txtSoyad
             // 
-            this.textEdit2.Location = new System.Drawing.Point(6, 17);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit2.Size = new System.Drawing.Size(186, 24);
-            this.textEdit2.TabIndex = 5;
+            this.txtSoyad.Location = new System.Drawing.Point(6, 17);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSoyad.Properties.Appearance.Options.UseBackColor = true;
+            this.txtSoyad.Properties.Appearance.Options.UseFont = true;
+            this.txtSoyad.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSoyad.Size = new System.Drawing.Size(186, 24);
+            this.txtSoyad.TabIndex = 5;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.textEdit1);
+            this.groupBox2.Controls.Add(this.txtEposta);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox2.Location = new System.Drawing.Point(122, 218);
@@ -188,22 +191,22 @@ namespace FindInDX
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "E-Posta";
             // 
-            // textEdit1
+            // txtEposta
             // 
-            this.textEdit1.Location = new System.Drawing.Point(6, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(405, 24);
-            this.textEdit1.TabIndex = 5;
+            this.txtEposta.Location = new System.Drawing.Point(6, 18);
+            this.txtEposta.Name = "txtEposta";
+            this.txtEposta.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtEposta.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEposta.Properties.Appearance.Options.UseBackColor = true;
+            this.txtEposta.Properties.Appearance.Options.UseFont = true;
+            this.txtEposta.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtEposta.Size = new System.Drawing.Size(405, 24);
+            this.txtEposta.TabIndex = 5;
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.textEdit3);
+            this.groupBox4.Controls.Add(this.txtSifre);
             this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox4.Location = new System.Drawing.Point(122, 285);
@@ -213,43 +216,41 @@ namespace FindInDX
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Şifre";
             // 
-            // textEdit3
+            // txtSifre
             // 
-            this.textEdit3.Location = new System.Drawing.Point(6, 18);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit3.Size = new System.Drawing.Size(405, 24);
-            this.textEdit3.TabIndex = 5;
+            this.txtSifre.Location = new System.Drawing.Point(6, 18);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Properties.Appearance.Options.UseBackColor = true;
+            this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSifre.Size = new System.Drawing.Size(405, 24);
+            this.txtSifre.TabIndex = 5;
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox5.Controls.Add(this.checkedComboBoxEdit1);
+            this.groupBox5.Controls.Add(this.cbBolge);
             this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox5.Location = new System.Drawing.Point(122, 355);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(417, 48);
+            this.groupBox5.Size = new System.Drawing.Size(417, 47);
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ülke";
             // 
-            // checkedComboBoxEdit1
+            // cbBolge
             // 
-            this.checkedComboBoxEdit1.EditValue = "";
-            this.checkedComboBoxEdit1.Location = new System.Drawing.Point(6, 14);
-            this.checkedComboBoxEdit1.Name = "checkedComboBoxEdit1";
-            this.checkedComboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkedComboBoxEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkedComboBoxEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.checkedComboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.checkedComboBoxEdit1.Size = new System.Drawing.Size(405, 26);
-            this.checkedComboBoxEdit1.TabIndex = 13;
+            this.cbBolge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbBolge.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cbBolge.FormattingEnabled = true;
+            this.cbBolge.Location = new System.Drawing.Point(11, 17);
+            this.cbBolge.Name = "cbBolge";
+            this.cbBolge.Size = new System.Drawing.Size(400, 30);
+            this.cbBolge.TabIndex = 13;
+            this.cbBolge.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureEdit1
             // 
@@ -265,13 +266,39 @@ namespace FindInDX
             this.pictureEdit1.Size = new System.Drawing.Size(823, 254);
             this.pictureEdit1.TabIndex = 1;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox6.Controls.Add(this.txtBio);
+            this.groupBox6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.groupBox6.Location = new System.Drawing.Point(122, 408);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(417, 48);
+            this.groupBox6.TabIndex = 13;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Kendini Tanıt...";
+            // 
+            // txtBio
+            // 
+            this.txtBio.Location = new System.Drawing.Point(6, 18);
+            this.txtBio.Name = "txtBio";
+            this.txtBio.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtBio.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBio.Properties.Appearance.Options.UseBackColor = true;
+            this.txtBio.Properties.Appearance.Options.UseFont = true;
+            this.txtBio.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtBio.Size = new System.Drawing.Size(405, 24);
+            this.txtBio.TabIndex = 5;
+            // 
             // FormUyeOl
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 532);
+            this.ClientSize = new System.Drawing.Size(647, 577);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -285,16 +312,17 @@ namespace FindInDX
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormUyeOl.IconOptions.Image")));
             this.Name = "FormUyeOl";
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAd.Properties)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoyad.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtBio.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,14 +336,16 @@ namespace FindInDX
         private DevExpress.XtraEditors.CheckButton checkButton2;
         private DevExpress.XtraEditors.SimpleButton btnIleri;
         private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.TextEdit txtEposta;
+        private DevExpress.XtraEditors.TextEdit txtAd;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit txtSoyad;
+        private DevExpress.XtraEditors.TextEdit txtEposta;
+        private DevExpress.XtraEditors.TextEdit txtSifre;
+        private System.Windows.Forms.ComboBox cbBolge;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private DevExpress.XtraEditors.TextEdit txtBio;
     }
 }

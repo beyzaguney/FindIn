@@ -40,7 +40,7 @@ namespace FindInDX
             this.txtEposta = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSifre = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.snapDockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.svgImageCollection1)).BeginInit();
@@ -48,7 +48,7 @@ namespace FindInDX
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // snapDockManager1
@@ -144,7 +144,7 @@ namespace FindInDX
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.textEdit1);
+            this.groupBox2.Controls.Add(this.txtSifre);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox2.Location = new System.Drawing.Point(130, 203);
@@ -154,17 +154,18 @@ namespace FindInDX
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Şifre";
             // 
-            // textEdit1
+            // txtSifre
             // 
-            this.textEdit1.Location = new System.Drawing.Point(13, 22);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(232, 28);
-            this.textEdit1.TabIndex = 4;
+            this.txtSifre.Location = new System.Drawing.Point(13, 22);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Properties.Appearance.Options.UseBackColor = true;
+            this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtSifre.Properties.PasswordChar = '*';
+            this.txtSifre.Size = new System.Drawing.Size(232, 28);
+            this.txtSifre.TabIndex = 4;
             // 
             // FormGiris
             // 
@@ -172,7 +173,6 @@ namespace FindInDX
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(562, 404);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -181,7 +181,6 @@ namespace FindInDX
             this.Controls.Add(this.btnGiris);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormGiris.IconOptions.Image")));
             this.Name = "FormGiris";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.snapDockManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ımageCollection1)).EndInit();
@@ -190,7 +189,7 @@ namespace FindInDX
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,7 +204,7 @@ namespace FindInDX
         private DevExpress.XtraEditors.SimpleButton btnUyeOl;
         private DevExpress.XtraEditors.SimpleButton btnGiris;
         private System.Windows.Forms.GroupBox groupBox2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtSifre;
     }
 }
 

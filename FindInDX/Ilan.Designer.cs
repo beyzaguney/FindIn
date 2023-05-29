@@ -29,11 +29,11 @@ namespace FindInDX
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.TableLayout.ItemTemplateBase ıtemTemplateBase2 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
+            DevExpress.XtraEditors.TableLayout.ItemTemplateBase ıtemTemplateBase1 = new DevExpress.XtraEditors.TableLayout.ItemTemplateBase();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -50,8 +50,8 @@ namespace FindInDX
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -69,6 +69,18 @@ namespace FindInDX
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İlan Başlığı";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(6, 18);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit1.Size = new System.Drawing.Size(625, 24);
+            this.textEdit1.TabIndex = 14;
             // 
             // groupBox2
             // 
@@ -91,18 +103,6 @@ namespace FindInDX
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(625, 126);
             this.textBox1.TabIndex = 0;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(6, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(625, 24);
-            this.textEdit1.TabIndex = 14;
             // 
             // radioButton1
             // 
@@ -244,8 +244,8 @@ namespace FindInDX
             this.checkedListBoxControl1.Name = "checkedListBoxControl1";
             this.checkedListBoxControl1.Size = new System.Drawing.Size(624, 97);
             this.checkedListBoxControl1.TabIndex = 0;
-            ıtemTemplateBase2.Name = "template1";
-            this.checkedListBoxControl1.Templates.Add(ıtemTemplateBase2);
+            ıtemTemplateBase1.Name = "template1";
+            this.checkedListBoxControl1.Templates.Add(ıtemTemplateBase1);
             // 
             // btnIleri
             // 
@@ -279,8 +279,8 @@ namespace FindInDX
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit2.Size = new System.Drawing.Size(101, 24);
+            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.textEdit2.Size = new System.Drawing.Size(101, 26);
             this.textEdit2.TabIndex = 15;
             // 
             // Ilan
@@ -309,9 +309,9 @@ namespace FindInDX
             this.IconOptions.Image = global::FindInDX.Properties.Resources.Fı__2_;
             this.Name = "Ilan";
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();

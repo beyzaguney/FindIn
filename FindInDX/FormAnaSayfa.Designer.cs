@@ -32,10 +32,10 @@ namespace FindInDX
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnaSayfa));
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.pgIlanlar = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.pgProfil = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
@@ -53,24 +53,22 @@ namespace FindInDX
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtEposta = new DevExpress.XtraEditors.TextEdit();
-            this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.gridControl3 = new DevExpress.XtraGrid.GridControl();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.pgIlanlarim = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
-            this.navigationPage1.SuspendLayout();
+            this.pgIlanlar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            this.navigationPage2.SuspendLayout();
+            this.pgProfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
@@ -81,14 +79,12 @@ namespace FindInDX
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
-            this.navigationPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            this.navigationPage4.SuspendLayout();
+            this.pgIlanlarim.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -97,10 +93,9 @@ namespace FindInDX
             this.navigationPane1.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.navigationPane1.Appearance.Options.UseBackColor = true;
             this.navigationPane1.Appearance.Options.UseFont = true;
-            this.navigationPane1.Controls.Add(this.navigationPage1);
-            this.navigationPane1.Controls.Add(this.navigationPage2);
-            this.navigationPane1.Controls.Add(this.navigationPage3);
-            this.navigationPane1.Controls.Add(this.navigationPage4);
+            this.navigationPane1.Controls.Add(this.pgIlanlar);
+            this.navigationPane1.Controls.Add(this.pgProfil);
+            this.navigationPane1.Controls.Add(this.pgIlanlarim);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationPane1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.navigationPane1.Location = new System.Drawing.Point(0, 0);
@@ -109,22 +104,21 @@ namespace FindInDX
             this.navigationPane1.PageProperties.AppearanceCaption.Options.UseBackColor = true;
             this.navigationPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Text;
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.navigationPage1,
-            this.navigationPage2,
-            this.navigationPage3,
-            this.navigationPage4});
+            this.pgIlanlar,
+            this.pgProfil,
+            this.pgIlanlarim});
             this.navigationPane1.RegularSize = new System.Drawing.Size(1031, 577);
-            this.navigationPane1.SelectedPage = this.navigationPage2;
+            this.navigationPane1.SelectedPage = this.pgProfil;
             this.navigationPane1.Size = new System.Drawing.Size(1031, 577);
             this.navigationPane1.TabIndex = 0;
             // 
-            // navigationPage1
+            // pgIlanlar
             // 
-            this.navigationPage1.Appearance.Options.UseFont = true;
-            this.navigationPage1.Caption = "İlanlar";
-            this.navigationPage1.Controls.Add(this.gridControl1);
-            this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(936, 504);
+            this.pgIlanlar.Appearance.Options.UseFont = true;
+            this.pgIlanlar.Caption = "İlanlar";
+            this.pgIlanlar.Controls.Add(this.gridControl1);
+            this.pgIlanlar.Name = "pgIlanlar";
+            this.pgIlanlar.Size = new System.Drawing.Size(936, 504);
             // 
             // gridControl1
             // 
@@ -141,32 +135,33 @@ namespace FindInDX
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // navigationPage2
+            // pgProfil
             // 
-            this.navigationPage2.Caption = "Profil";
-            this.navigationPage2.Controls.Add(this.labelControl7);
-            this.navigationPage2.Controls.Add(this.labelControl6);
-            this.navigationPage2.Controls.Add(this.pictureEdit6);
-            this.navigationPage2.Controls.Add(this.labelControl5);
-            this.navigationPage2.Controls.Add(this.labelControl4);
-            this.navigationPage2.Controls.Add(this.labelControl3);
-            this.navigationPage2.Controls.Add(this.labelControl2);
-            this.navigationPage2.Controls.Add(this.labelControl1);
-            this.navigationPage2.Controls.Add(this.pictureEdit5);
-            this.navigationPage2.Controls.Add(this.pictureEdit4);
-            this.navigationPage2.Controls.Add(this.pictureEdit3);
-            this.navigationPage2.Controls.Add(this.pictureEdit2);
-            this.navigationPage2.Controls.Add(this.pictureEdit1);
-            this.navigationPage2.Controls.Add(this.groupBox2);
-            this.navigationPage2.Controls.Add(this.groupBox1);
-            this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(936, 504);
+            this.pgProfil.Caption = "Profil";
+            this.pgProfil.Controls.Add(this.groupBox3);
+            this.pgProfil.Controls.Add(this.labelControl7);
+            this.pgProfil.Controls.Add(this.labelControl6);
+            this.pgProfil.Controls.Add(this.pictureEdit6);
+            this.pgProfil.Controls.Add(this.labelControl5);
+            this.pgProfil.Controls.Add(this.labelControl4);
+            this.pgProfil.Controls.Add(this.labelControl3);
+            this.pgProfil.Controls.Add(this.labelControl2);
+            this.pgProfil.Controls.Add(this.labelControl1);
+            this.pgProfil.Controls.Add(this.pictureEdit5);
+            this.pgProfil.Controls.Add(this.pictureEdit4);
+            this.pgProfil.Controls.Add(this.pictureEdit3);
+            this.pgProfil.Controls.Add(this.pictureEdit2);
+            this.pgProfil.Controls.Add(this.pictureEdit1);
+            this.pgProfil.Controls.Add(this.groupBox2);
+            this.pgProfil.Controls.Add(this.groupBox1);
+            this.pgProfil.Name = "pgProfil";
+            this.pgProfil.Size = new System.Drawing.Size(936, 504);
             // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(199, 195);
+            this.labelControl7.Location = new System.Drawing.Point(199, 281);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(8, 20);
             this.labelControl7.TabIndex = 26;
@@ -176,7 +171,7 @@ namespace FindInDX
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(25, 195);
+            this.labelControl6.Location = new System.Drawing.Point(25, 281);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(152, 20);
             this.labelControl6.TabIndex = 25;
@@ -362,47 +357,33 @@ namespace FindInDX
             this.txtEposta.Size = new System.Drawing.Size(186, 24);
             this.txtEposta.TabIndex = 4;
             // 
-            // navigationPage3
+            // pgIlanlarim
             // 
-            this.navigationPage3.Caption = "Mesajlar";
-            this.navigationPage3.Controls.Add(this.gridControl3);
-            this.navigationPage3.Controls.Add(this.navBarControl1);
-            this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(936, 504);
+            this.pgIlanlarim.Caption = "İlanlarım";
+            this.pgIlanlarim.Controls.Add(this.simpleButton3);
+            this.pgIlanlarim.Controls.Add(this.simpleButton2);
+            this.pgIlanlarim.Controls.Add(this.simpleButton1);
+            this.pgIlanlarim.Controls.Add(this.gridControl2);
+            this.pgIlanlarim.Name = "pgIlanlarim";
+            this.pgIlanlarim.Size = new System.Drawing.Size(936, 504);
             // 
-            // gridControl3
+            // simpleButton3
             // 
-            this.gridControl3.Location = new System.Drawing.Point(0, 2);
-            this.gridControl3.MainView = this.gridView3;
-            this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(930, 501);
-            this.gridControl3.TabIndex = 1;
-            this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView3});
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(767, 3);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(39, 34);
+            this.simpleButton3.TabIndex = 3;
+            this.simpleButton3.Text = "simpleButton3";
             // 
-            // gridView3
+            // simpleButton2
             // 
-            this.gridView3.GridControl = this.gridControl3;
-            this.gridView3.Name = "gridView3";
-            // 
-            // navBarControl1
-            // 
-            this.navBarControl1.Location = new System.Drawing.Point(188, 119);
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 483;
-            this.navBarControl1.Size = new System.Drawing.Size(483, 187);
-            this.navBarControl1.TabIndex = 0;
-            this.navBarControl1.Text = "navBarControl1";
-            // 
-            // navigationPage4
-            // 
-            this.navigationPage4.Caption = "İlanlarım";
-            this.navigationPage4.Controls.Add(this.simpleButton3);
-            this.navigationPage4.Controls.Add(this.simpleButton2);
-            this.navigationPage4.Controls.Add(this.simpleButton1);
-            this.navigationPage4.Controls.Add(this.gridControl2);
-            this.navigationPage4.Name = "navigationPage4";
-            this.navigationPage4.Size = new System.Drawing.Size(936, 504);
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(812, 3);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(39, 34);
+            this.simpleButton2.TabIndex = 2;
+            this.simpleButton2.Text = "simpleButton2";
             // 
             // simpleButton1
             // 
@@ -432,23 +413,31 @@ namespace FindInDX
             // 
             this.sqlDataSource1.Name = "sqlDataSource1";
             // 
-            // simpleButton2
+            // groupBox3
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(812, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(39, 34);
-            this.simpleButton2.TabIndex = 2;
-            this.simpleButton2.Text = "simpleButton2";
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.textEdit2);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.groupBox3.Location = new System.Drawing.Point(25, 117);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(416, 48);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Biyografi";
             // 
-            // simpleButton3
+            // textEdit2
             // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(767, 3);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(39, 34);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "simpleButton3";
+            this.textEdit2.Enabled = false;
+            this.textEdit2.Location = new System.Drawing.Point(6, 18);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.textEdit2.Size = new System.Drawing.Size(404, 24);
+            this.textEdit2.TabIndex = 4;
             // 
             // FormAnaSayfa
             // 
@@ -461,13 +450,14 @@ namespace FindInDX
             this.IconOptions.Image = global::FindInDX.Properties.Resources.Fı__2_;
             this.Name = "FormAnaSayfa";
             this.Text = "FormAnaSayfa";
+            this.Load += new System.EventHandler(this.FormAnaSayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
-            this.navigationPage1.ResumeLayout(false);
+            this.pgIlanlar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            this.navigationPage2.ResumeLayout(false);
-            this.navigationPage2.PerformLayout();
+            this.pgProfil.ResumeLayout(false);
+            this.pgProfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
@@ -478,14 +468,12 @@ namespace FindInDX
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
-            this.navigationPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            this.navigationPage4.ResumeLayout(false);
+            this.pgIlanlarim.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,22 +481,18 @@ namespace FindInDX
         #endregion
 
         private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
+        private DevExpress.XtraBars.Navigation.NavigationPage pgIlanlar;
+        private DevExpress.XtraBars.Navigation.NavigationPage pgProfil;
+        private DevExpress.XtraBars.Navigation.NavigationPage pgIlanlarim;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraNavBar.NavBarControl navBarControl1;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.TextEdit txtEposta;
-        private DevExpress.XtraGrid.GridControl gridControl3;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
@@ -526,5 +510,7 @@ namespace FindInDX
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
     }
 }

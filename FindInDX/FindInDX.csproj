@@ -75,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SQLIslemleri.cs" />
     <Compile Include="FormAnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
