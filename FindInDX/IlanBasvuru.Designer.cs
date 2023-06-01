@@ -30,20 +30,20 @@ namespace FindInDX
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtBaslik = new DevExpress.XtraEditors.TextEdit();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMetin = new System.Windows.Forms.TextBox();
             this.btnIleri = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnReddet = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBaslik.Properties)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.textEdit1);
+            this.groupBox1.Controls.Add(this.txtBaslik);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox1.Location = new System.Drawing.Point(22, 12);
@@ -53,22 +53,22 @@ namespace FindInDX
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seçilen İlan";
             // 
-            // textEdit1
+            // txtBaslik
             // 
-            this.textEdit1.Location = new System.Drawing.Point(6, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.White;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(625, 24);
-            this.textEdit1.TabIndex = 14;
+            this.txtBaslik.Location = new System.Drawing.Point(6, 18);
+            this.txtBaslik.Name = "txtBaslik";
+            this.txtBaslik.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.txtBaslik.Properties.Appearance.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBaslik.Properties.Appearance.Options.UseBackColor = true;
+            this.txtBaslik.Properties.Appearance.Options.UseFont = true;
+            this.txtBaslik.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtBaslik.Size = new System.Drawing.Size(625, 24);
+            this.txtBaslik.TabIndex = 14;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtMetin);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.groupBox2.Location = new System.Drawing.Point(22, 66);
@@ -78,14 +78,14 @@ namespace FindInDX
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Başvuru Metni";
             // 
-            // textBox1
+            // txtMetin
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(6, 22);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(625, 126);
-            this.textBox1.TabIndex = 0;
+            this.txtMetin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMetin.Location = new System.Drawing.Point(6, 22);
+            this.txtMetin.Multiline = true;
+            this.txtMetin.Name = "txtMetin";
+            this.txtMetin.Size = new System.Drawing.Size(625, 126);
+            this.txtMetin.TabIndex = 0;
             // 
             // btnIleri
             // 
@@ -100,20 +100,22 @@ namespace FindInDX
             this.btnIleri.Size = new System.Drawing.Size(152, 44);
             this.btnIleri.TabIndex = 25;
             this.btnIleri.Text = "Başvur";
+            this.btnIleri.Click += new System.EventHandler(this.btnIleri_Click);
             // 
-            // simpleButton1
+            // btnReddet
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.White;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Location = new System.Drawing.Point(333, 239);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(152, 44);
-            this.simpleButton1.TabIndex = 26;
-            this.simpleButton1.Text = "Reddet";
+            this.btnReddet.Appearance.BackColor = System.Drawing.Color.White;
+            this.btnReddet.Appearance.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnReddet.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReddet.Appearance.Options.UseBackColor = true;
+            this.btnReddet.Appearance.Options.UseFont = true;
+            this.btnReddet.Appearance.Options.UseForeColor = true;
+            this.btnReddet.Location = new System.Drawing.Point(333, 239);
+            this.btnReddet.Name = "btnReddet";
+            this.btnReddet.Size = new System.Drawing.Size(152, 44);
+            this.btnReddet.TabIndex = 26;
+            this.btnReddet.Text = "Reddet";
+            this.btnReddet.Click += new System.EventHandler(this.btnReddet_Click);
             // 
             // IlanBasvuru
             // 
@@ -121,15 +123,16 @@ namespace FindInDX
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 312);
-            this.Controls.Add(this.simpleButton1);
+            this.ClientSize = new System.Drawing.Size(684, 306);
+            this.Controls.Add(this.btnReddet);
             this.Controls.Add(this.btnIleri);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.IconOptions.Image = global::FindInDX.Properties.Resources.Fı__2_;
             this.Name = "IlanBasvuru";
+            this.Load += new System.EventHandler(this.IlanBasvuru_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBaslik.Properties)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -139,10 +142,10 @@ namespace FindInDX
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtBaslik;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMetin;
         private DevExpress.XtraEditors.SimpleButton btnIleri;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnReddet;
     }
 }

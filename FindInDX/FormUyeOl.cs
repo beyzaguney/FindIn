@@ -21,6 +21,7 @@ namespace FindInDX
             groupBox3.Visible = false;
             groupBox4.Visible = false;
             groupBox5.Visible = false;
+            groupBox6.Visible = false;
             Response cvp = FormGiris.sql.SelectIslemi("select * from Bolgeler");
             cbBolge.DataSource = cvp.tablo;
             cbBolge.DisplayMember = "BolgeAdi";
@@ -59,6 +60,7 @@ namespace FindInDX
                 groupBox3.Visible = true;
                 groupBox4.Visible = true;
                 groupBox5.Visible = true;
+                groupBox6.Visible = true;
                 if (checkButton1.Checked == true)
                     uyeTipi = 0;
                 else
@@ -66,7 +68,7 @@ namespace FindInDX
             }
             else
             {
-                if (!txtAd.Text.Contains('@') || !txtAd.Text.Contains('.'))
+                if (!txtEposta.Text.Contains('@') || !txtEposta.Text.Contains('.'))
                 {
                     MessageBox.Show("Email Formatı Hatalı");
                     return;

@@ -173,7 +173,7 @@ namespace FindInDX
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 404);
+            this.ClientSize = new System.Drawing.Size(521, 367);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUyeOl);
@@ -202,9 +202,9 @@ namespace FindInDX
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.TextEdit txtEposta;
         private DevExpress.XtraEditors.SimpleButton btnUyeOl;
-        private DevExpress.XtraEditors.SimpleButton btnGiris;
         private System.Windows.Forms.GroupBox groupBox2;
         private DevExpress.XtraEditors.TextEdit txtSifre;
+        public DevExpress.XtraEditors.SimpleButton btnGiris;
     }
 }
 

@@ -14,11 +14,14 @@ namespace FindInDX
     {
         public static SQLIslemleri sql;
         public static string AktifKullaniciID;
+        public static bool uyeTipi;
        
         public FormGiris()
         {
             InitializeComponent();
             sql = new SQLIslemleri("BEYZA\\BEYZA", "FindIn");
+            txtEposta.Text = "bb@gmail.com";
+            txtSifre.Text = "1233";
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace FindInDX
                 MessageBox.Show("Email Formatı Hatalı");
                 return;
             }
-            Response response = sql.SelectIslemi("select * from Kullanicilar where EPosta=@Eposta and Sifre=@Sifre",
+            Response response = sql.SelectIslemi("select * from Kullanicilar k left join KullaniciDetay kd on k.KullaniciID=kd.KullaniciID where EPosta=@Eposta and Sifre=@Sifre",
                 new SqlParametresi("@EPosta",txtEposta.Text),
                 new SqlParametresi("@Sifre",txtSifre.Text));
             if (response.tablo.Rows.Count == 0)
@@ -37,6 +40,8 @@ namespace FindInDX
                 return;
             }
             AktifKullaniciID = (response.tablo.Rows[0]["KullaniciID"]).ToString();
+            uyeTipi = (bool)response.tablo.Rows[0]["KullaniciTipi"];
+
             FormAnaSayfa home = new FormAnaSayfa();
             this.Hide();
             home.ShowDialog();
